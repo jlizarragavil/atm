@@ -29,7 +29,6 @@ import com.atm.api.models.services.CustomerServiceImpl;
 
 @SpringBootTest
 @AutoConfigureMockMvc
-@Disabled
 class SpringBootAtmApiApplicationTests {
 
 	Integer atmAmountMoney = 0;
