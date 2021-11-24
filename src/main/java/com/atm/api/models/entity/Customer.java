@@ -1,8 +1,5 @@
 package com.atm.api.models.entity;
 
-import java.io.Serializable;
-
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,14 +8,11 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "customer")
-public class Customer implements Serializable {
-
-	private static final long serialVersionUID = 1L;
+public class Customer {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	@Column(name = "account_number")
 	private String accountNumber;
 	private String pin;
 	private Integer balance;
