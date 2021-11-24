@@ -12,6 +12,7 @@ import java.util.Map;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,8 +26,10 @@ import com.atm.api.models.dao.ICustomerDao;
 import com.atm.api.models.entity.Customer;
 import com.atm.api.models.services.CustomerServiceImpl;
 
+
 @SpringBootTest
 @AutoConfigureMockMvc
+@Disabled
 class SpringBootAtmApiApplicationTests {
 
 	Integer atmAmountMoney = 0;
